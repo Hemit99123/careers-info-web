@@ -4,7 +4,7 @@ import SkillsSection from '../swe/skills-section'
 import TechStack from '../swe/tech-stack'
 import TimelineSection from '../swe/timeline-section'
 import { ArrowRight, Code, Database, Globe, Laptop, Server, Zap } from "lucide-react"
-import Link from 'next/link'
+import Image from 'next/image'
 
 const SoftwareEngineer = () => {
   return (
@@ -13,7 +13,7 @@ const SoftwareEngineer = () => {
       <section id="description" className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-sm font-medium">
+            <div className="items-center px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 text-sm font-medium">
               <Code className="mr-2 h-4 w-4" />
               Career Path
             </div>
@@ -23,30 +23,11 @@ const SoftwareEngineer = () => {
             <p className="text-lg text-gray-300">
             Computer Programmers are responsible for building code to create software programs (websites, apps, etc..) A programmer cannot just start blindly coding. Instead, they must begin with planning. In this phase, they create models and flowcharts that detail how the code should be written and all features are designed here too. Afterwards, they present this work to their business/executive team to ensure it meets business standards. Only then can a programmer begin writing code for a program!
             </p>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
-                <Laptop className="h-8 w-8 text-blue-400 mb-2" />
-                <h3 className="font-semibold text-lg">Application Development</h3>
-                <p className="text-gray-400 text-sm">Building software for various platforms and devices</p>
-              </div>
-              <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
-                <Database className="h-8 w-8 text-purple-400 mb-2" />
-                <h3 className="font-semibold text-lg">Database Management</h3>
-                <p className="text-gray-400 text-sm">Designing and optimizing data storage solutions</p>
-              </div>
-              <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
-                <Server className="h-8 w-8 text-green-400 mb-2" />
-                <h3 className="font-semibold text-lg">Backend Systems</h3>
-                <p className="text-gray-400 text-sm">Creating server-side logic and infrastructure</p>
-              </div>
-              <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
-                <Globe className="h-8 w-8 text-orange-400 mb-2" />
-                <h3 className="font-semibold text-lg">Web Development</h3>
-                <p className="text-gray-400 text-sm">Building responsive and interactive websites</p>
-              </div>
-            </div>
+            
           </div>
+          
           <div className="relative">
+            
             <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur opacity-30"></div>
             <div className="relative bg-slate-800 p-6 rounded-2xl border border-slate-700">
               <h3 className="text-xl font-bold mb-4 flex items-center">
@@ -96,6 +77,33 @@ const SoftwareEngineer = () => {
         </div>
       </section>
 
+      <div className="grid grid-cols-2 gap-4">
+              <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
+                <Laptop className="h-8 w-8 text-blue-400 mb-2" />
+                <h3 className="font-semibold text-lg">Application Development</h3>
+                <p className="text-gray-400 text-sm">Building software for various platforms and devices</p>
+              </div>
+              <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
+                <Database className="h-8 w-8 text-purple-400 mb-2" />
+                <h3 className="font-semibold text-lg">Database Management</h3>
+                <p className="text-gray-400 text-sm">Designing and optimizing data storage solutions</p>
+              </div>
+              <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
+                <Image 
+                    src="/api-workings.png"
+                    height={1000}
+                    width={1000}
+                    alt=''
+                />
+                <h3 className="font-semibold text-lg">API Development</h3>
+                <p className="text-gray-400 text-sm">An application's UI (user-interface) needs an API to interact with. The UI doesn't directly have access to a server and all resources, such as posts come from a database (only accessible on server environment). This means we need something to deliver the resources from the server which is the API. Here's an analogy: think of the "client" or UI as a customer. They want food (resources like posts, comments, shares) but cannot directly talk to the chef (server). A waiter (API) does this for you. They directly give the chefs food orders (requests) and the chefs give them food (response with resources). Many different technologies can be used to build APIs such as: NodeJS, Django, Flask, Deno, Bun, Springboot, etc. In conclusion, there is a critical need for an API when developing <b>ANY</b> software. Personally, my favourite is NodeJS due to its superior developer experience and community.</p>
+              </div>
+              <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
+                <Globe className="h-8 w-8 text-orange-400 mb-2" />
+                <h3 className="font-semibold text-lg">Web Development</h3>
+                <p className="text-gray-400 text-sm">Websites are another way for a user to interact with an API to access server-only resources. It happens on the World Wide Web (WWW), invented in 1989. To access a website, a user simply needs to install a browser such as Chrome and Safari and type in the website address within the search bars. Programmers that specialize in website development are known as Web Developers. To develop a website, a programmer must know HTML, CSS, and JavaScript. HTML is the structure or "bones", providing formatting for each visual element. CSS is the styling or "skin", enhancing its overall look. JavaScript is the logic or "brains", making the website functional. Developers may use other alternative technologies such as Django in Python. However, the developer experience isn't as good as HTML, CSS, and JavaScript.</p>
+              </div>
+            </div>
       {/* Skills Section */}
       <SkillsSection />
 
