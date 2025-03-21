@@ -18,10 +18,10 @@ const SoftwareEngineer = () => {
               Career Path
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-              Software Developer
+              Computer Programmer
             </h2>
             <p className="text-lg text-gray-300">
-              Software developers design, build, and maintain computer programs that power everything from mobile apps
+              Computer Programmers design, build, and maintain computer programs that power everything from mobile apps
               to enterprise systems. They collaborate with teams to solve complex problems and create digital solutions
               that impact millions of users worldwide.
             </p>
@@ -110,7 +110,7 @@ const SoftwareEngineer = () => {
           <h2 className="text-4xl md:text-5xl font-bold">
             Your Road to Becoming a{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">
-              Software Developer
+              Computer Programmer
             </span>
           </h2>
           <p className="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">
@@ -423,7 +423,7 @@ const SoftwareEngineer = () => {
             of Software Development
           </h2>
           <p className="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">
-            The demand for software developers continues to grow with excellent job prospects
+            The demand for Computer Programmers continues to grow with excellent job prospects
           </p>
         </div>
 
@@ -433,7 +433,7 @@ const SoftwareEngineer = () => {
             <div className="relative z-10">
               <h3 className="text-2xl font-bold mb-4 text-blue-400">Job Growth</h3>
               <p className="text-gray-300 mb-6">
-                Employment of software developers is projected to grow 22% from 2020 to 2030, much faster than the
+                Employment of Computer Programmers is projected to grow 22% from 2020 to 2030, much faster than the
                 average for all occupations.
               </p>
               <div className="flex items-center">
