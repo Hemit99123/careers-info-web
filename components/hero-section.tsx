@@ -2,13 +2,19 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { useCareerState } from "@/store/career" // Adjust the import according to your file structure
 
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false)
+  const { change, career } = useCareerState()
 
   useEffect(() => {
     setIsVisible(true)
   }, [])
+
+  const handleCareerChange = (career: "swe" | "cyber") => {
+    change(career)  // Update the career state to either "swe" or "cyber"
+  }
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -18,27 +24,29 @@ export default function HeroSection() {
         >
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-              Software Developer
+              {career === 'swe' ? "Software Developer" : "Cyber Operator"}
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
-            Explore the exciting world of software development — where creativity meets technology to build the digital
-            future
+            {career === 'swe' 
+              ? "Explore the exciting world of software development — where creativity meets technology to build the digital future" 
+              : "Dive into the dynamic field of cybersecurity — where the protection of digital assets is paramount in today's technology-driven world."
+            }
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Link
-              href="#description"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium hover:from-blue-700 hover:to-purple-700 transition-colors"
+          <div className="flex justify-center gap-4">
+            <button 
+              onClick={() => handleCareerChange('swe')}
+              className={`px-6 py-3 rounded-lg ${career === 'swe' ? 'bg-blue-600' : 'bg-transparent'} text-white font-medium transition-colors`}
             >
-              Explore Career
-            </Link>
-            <Link
-              href="#education"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-transparent text-white font-medium border border-white/30 hover:bg-white/10 transition-colors"
+              Software Engineering
+            </button>
+            <button 
+              onClick={() => handleCareerChange('cyber')}
+              className={`px-6 py-3 rounded-lg ${career === 'cyber' ? 'bg-blue-600' : 'bg-transparent'} text-white font-medium transition-colors`}
             >
-              Education Path
-            </Link>
+              Cybersecurity
+            </button>
           </div>
         </div>
       </div>
