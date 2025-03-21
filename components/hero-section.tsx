@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import Link from "next/link"
 import { useCareerState } from "@/store/career" // Adjust the import according to your file structure
 
 export default function HeroSection() {
@@ -22,11 +21,14 @@ export default function HeroSection() {
         <div
           className={`transition-all duration-1000 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
         >
-          <h1 className="text-lg md:text3xl lg:text-7xl font-extrabold mb-6">
+          <h1 className="text-lg md:text-3xl lg:text-7xl font-extrabold mb-6">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
               {career === 'swe' ? "Computer Programmer" : "Cyber Operator"}
             </span>
           </h1>
+          <div className="mb-12 justify-center font-medium">
+              Science, Technology, Engineering and Mathematic
+          </div>
           <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
             {career === 'swe' 
               ? "Explore the fast pacing environment of software engineering — where creativity meets technology to forge a new future" 
@@ -49,6 +51,24 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
+      </div>
+
+      {/* Scroll Down Arrow */}
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 animate-bounce"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 15l7 7 7-7"
+            />
+          </svg>
       </div>
     </section>
   )
