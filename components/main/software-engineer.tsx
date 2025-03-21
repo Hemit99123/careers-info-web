@@ -1,8 +1,8 @@
 import React from 'react'
-import SalaryChart from '../salary-chart'
-import SkillsSection from '../skills-section'
-import TechStack from '../tech-stack'
-import TimelineSection from '../timeline-section'
+import SalaryChart from '../swe/salary-chart'
+import SkillsSection from '../swe/skills-section'
+import TechStack from '../swe/tech-stack'
+import TimelineSection from '../swe/timeline-section'
 import { ArrowRight, Code, Database, Globe, Laptop, Server, Zap } from "lucide-react"
 import Link from 'next/link'
 
@@ -261,7 +261,7 @@ const SoftwareEngineer = () => {
           </div>
 
           <div className="h-[400px] bg-slate-800/50 rounded-2xl border border-slate-700 p-6 md:p-8">
-            <h3 className="text-2xl font-bold mb-6">Salary Trends (2018-2025)</h3>
+            <h3 className="text-2xl font-bold mb-6">Salary Trends (2016-2026)</h3>
             <SalaryChart />
           </div>
         </div>
