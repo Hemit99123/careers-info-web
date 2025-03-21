@@ -21,9 +21,7 @@ const SoftwareEngineer = () => {
               Computer Programmer
             </h2>
             <p className="text-lg text-gray-300">
-              Computer Programmers design, build, and maintain computer programs that power everything from mobile apps
-              to enterprise systems. They collaborate with teams to solve complex problems and create digital solutions
-              that impact millions of users worldwide.
+            Computer Programmers are responsible for building code to create software programs (websites, apps, etc..) A programmer cannot just start blindly coding. Instead, they must begin with planning. In this phase, they create models and flowcharts that detail how the code should be written and all features are designed here too. Afterwards, they present this work to their business/executive team to ensure it meets business standards. Only then can a programmer begin writing code for a program!
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
