@@ -24,7 +24,7 @@ export default function SkillsSection() {
 
       <Tabs defaultValue="technical" className="w-full" onValueChange={setActiveTab}>
         <div className="flex justify-center mb-8">
-          <TabsList className="grid grid-cols-2 w-full max-w-md">
+          <TabsList className="h-16 grid grid-cols-2 w-full max-w-md">
             <TabsTrigger value="technical" className="text-lg py-3">
               Technical Skills
             </TabsTrigger>
