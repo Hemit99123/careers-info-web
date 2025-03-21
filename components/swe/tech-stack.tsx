@@ -33,7 +33,7 @@ export default function TechStack() {
     },
     {
       name: "AWS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+      icon: "/aws.png",
       color: "#FF9900",
       description: "Cloud infrastructure and services",
     },
