@@ -76,7 +76,18 @@ const WebDev = () => {
           </div>
         </div>
       </section>
-
+      <div className="text-center mb-16">
+        <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-sm font-medium mb-4">
+          What we do?
+        </div>
+        <h2 className="text-4xl md:text-5xl font-bold">
+          Tasks of a
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-lime-500 ml-2">Web Developer</span>
+        </h2>
+        <p className="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">
+          It is hard work being a Web Developer!
+        </p>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 p-6">
   {/* API Development Card */}
   <div className="bg-slate-800/70 p-6 rounded-3xl border border-slate-700 shadow-xl transition-transform hover:scale-105 hover:shadow-2xl">
