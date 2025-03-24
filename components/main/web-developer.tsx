@@ -21,7 +21,7 @@ const WebDev = () => {
             Web Developer
             </h2>
             <p className="text-lg text-gray-300">
-            Web Develoeprs are responsible for building code to create a website. A developer cannot just start blindly coding. Instead, they must begin with planning. In this phase, they create models and flowcharts that detail how the code should be written and all features are designed here too. Afterwards, they present this work to their business/executive team to ensure it meets business standards. Only then can a Web Developer begin writing code for a program!
+            Web Developers are responsible for building code to create a website. A developer cannot just start blindly coding. Instead, they must begin with planning. In this phase, they create models and flowcharts that detail how the code should be written and all features are designed here too. Afterwards, they present this work to their business/executive team to ensure it meets business standards. Only then can a Web Developer begin writing code for a program!
             </p>
             
           </div>
@@ -77,28 +77,50 @@ const WebDev = () => {
         </div>
       </section>
 
-      <div className="grid grid-cols-2 gap-4">
-              <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
-                <Image 
-                    src="/api-workings.png"
-                    height={1000}
-                    width={1000}
-                    alt=''
-                />
-                <h3 className="font-semibold text-lg text-gray-200">API Development</h3>
-                <p className="text-sm">An application's UI (user-interface) needs an API to interact with. The UI doesn't directly have access to a server and all resources, such as posts come from a database (only accessible on server environment). This means we need something to deliver the resources from the server which is the API. Here's an analogy: think of the "client" or UI as a customer. They want food (resources like posts, comments, shares) but cannot directly talk to the chef (server). A waiter (API) does this for you. They directly give the chefs food orders (requests) and the chefs give them food (response with resources). It is the Web Developer's job to build an API, spefically a Backend Developer. To build an API, a developer can employ many different tools such as ExpressJS, Django, FastAPI, etc. These are "frameworks" which provide pre-existing code that automatically builds an API with your logic. </p>
-              </div>
-              <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700">
-                <Image 
-                    src="/webdev.png"
-                    className='rounded-lg'
-                    height={500}
-                    width={500}
-                    alt=''
-                />                <h3 className="font-semibold text-lg text-gray-200">Web Development</h3>
-                <p className="text-sm">Developers who specialize in building websites are known as Website (Web) Developers. To build a webiste, a Web Developer must use HTML, CSS, and JavaScript. HTML is used to structure all the contents on the webpage. CSS gives the webpage style. JavaScript gives the webpage functionality. A good analogy is that HTML is the bones (structure of body) of the website, CSS is the skin (external looks/styling), and JavaScript is the brain (command-center of logic)</p>
-              </div>
-            </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 p-6">
+  {/* API Development Card */}
+  <div className="bg-slate-800/70 p-6 rounded-3xl border border-slate-700 shadow-xl transition-transform hover:scale-105 hover:shadow-2xl">
+    <div className="relative mb-6 w-full">
+      <Image 
+        src="/api-workings.png"
+        height={350}
+        width={350}
+        alt="API illustration"
+        className="rounded-2xl object-contain w-full h-auto mx-auto"
+      />
+    </div>
+    <h3 className="font-bold text-3xl text-gray-100 mb-4 text-center">API Development:</h3>
+    <p className="text-base text-gray-300 leading-relaxed text-justify">
+      An application's UI (user-interface) needs an API to interact with. The UI doesn't directly have access to a server, and all resources, such as posts, come from a database (only accessible on the server environment). This means we need something to deliver the resources from the server, which is the API. 
+      <br /><br />
+      Here's an analogy: think of the "client" or UI as a customer. They want food (resources like posts, comments, shares) but cannot directly talk to the chef (server). A waiter (API) does this for you. They directly give the chefs food orders (requests) and the chefs give them food (response with resources).
+    </p>
+  </div>
+
+  {/* Web Development Card */}
+  <div className="bg-slate-800/70 p-6 rounded-3xl border border-slate-700 shadow-xl transition-transform hover:scale-105 hover:shadow-2xl">
+    <div className="relative mb-6 w-full">
+      <Image 
+        src="/webdev.png"
+        height={400}
+        width={500}
+        alt="Web Development illustration"
+        className="rounded-2xl object-contain mx-auto"
+      />
+    </div>
+    <h3 className="font-bold text-3xl text-gray-100 mb-4 text-center">Building Websites:</h3>
+    <p className="text-base text-gray-300 leading-relaxed text-justify">
+      Developers who specialize in building websites are known as Website (Web) Developers. To build a website, a Web Developer must use HTML, CSS, and JavaScript. HTML is used to structure all the contents on the webpage. CSS gives the webpage style. JavaScript gives the webpage functionality. 
+      <br /><br />
+      A good analogy is that HTML is the bones (structure of the body) of the website, CSS is the skin (external looks/styling), and JavaScript is the brain (command-center of logic).
+    </p>
+  </div>
+</div>
+
+
+ 
+
+
       {/* Skills Section */}
       <SkillsSection />
 
@@ -115,7 +137,7 @@ const WebDev = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">
-            Multiple pathways can lead to a successful career in software development
+            Multiple pathways can lead to a successful career in web development
           </p>
         </div>
 
@@ -202,7 +224,7 @@ const WebDev = () => {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">Earn?</span>
           </h2>
           <p className="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">
-            Software development offers competitive salaries that increase with experience and specialization
+            Web development offers competitive salaries that increase with experience and specialization
           </p>
         </div>
 
@@ -282,7 +304,7 @@ const WebDev = () => {
             the Field
           </h2>
           <p className="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">
-            The software development landscape has evolved dramatically in recent years
+            The web development landscape has evolved dramatically in recent years
           </p>
         </div>
 
@@ -323,7 +345,7 @@ const WebDev = () => {
                 <div>
                   <h4 className="text-xl font-semibold mb-1">Low-Code/No-Code Platforms</h4>
                   <p className="text-gray-300">
-                    These platforms are democratizing software development, allowing non-Web Developers to build
+                    These platforms are democratizing web development, allowing non-Web Developers to build
                     applications while changing the role of professional developers to focus on more complex problems.
                   </p>
                 </div>
@@ -421,7 +443,7 @@ const WebDev = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold">
             The <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-500">Future</span>{" "}
-            of Software Development
+            of web development
           </h2>
           <p className="text-xl text-gray-300 mt-4 max-w-3xl mx-auto">
             The demand for Web Developers continues to grow with excellent job prospects
@@ -476,7 +498,7 @@ const WebDev = () => {
             <div className="relative z-10">
               <h3 className="text-2xl font-bold mb-4 text-green-400">Job Security</h3>
               <p className="text-gray-300 mb-6">
-                Software development offers strong job security with a low unemployment rate and high demand across
+                Web development offers strong job security with a low unemployment rate and high demand across
                 virtually all industries.
               </p>
               <div className="flex items-center justify-between">
@@ -498,49 +520,44 @@ const WebDev = () => {
         </div>
 
         <div className="mt-16 bg-slate-800/50 rounded-2xl border border-slate-700 p-6 md:p-8">
-          <h3 className="text-2xl font-bold mb-6">How the Field Has Changed</h3>
+          <h3 className="text-2xl font-bold mb-6">Timeline of Websites:</h3>
           <div className="space-y-6">
             <div className="flex gap-6 items-start">
-              <div className="text-4xl font-bold text-blue-400">2010</div>
+              <div className="text-4xl font-bold text-blue-400">1990s</div>
+              <div>
+                <h4 className="text-xl font-semibold mb-2">The Birth of the Web</h4>
+                <p className="text-gray-300">
+                  The World Wide Web was introduced by Tim berners-Lee in 1989, allowing for sharing of information across multiple computers. Websites during this area were known as "Web 1.0" and were developed using HTML and CSS. They were only informational websites and there was no interactivity on them.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6 items-start">
+              <div className="text-4xl font-bold text-purple-400">2000s</div>
+              <div>
+                <h4 className="text-xl font-semibold mb-2">Rise of Web 2.0</h4>
+                <p className="text-gray-300">
+                  With the rise of programming languages such as PHP and JavaScript, developers can now make their webpages interactive allowing for a more immersive experience for users. This era also saw the rise of social media platforms such as Youtube, Facebook, and MySpace.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6 items-start">
+              <div className="text-4xl font-bold text-green-400">2010s</div>
               <div>
                 <h4 className="text-xl font-semibold mb-2">The Mobile Revolution</h4>
                 <p className="text-gray-300">
-                  Mobile app development became mainstream with the rise of iOS and Android platforms. Developers
-                  primarily worked on-site with waterfall methodologies and monolithic applications.
+                  As phones become more popular, there was an ever increasing demand to make websites "responsive" (mobile-friendly). The UI had to change because a phone is much smaller compared to the large screen of a computer. 
                 </p>
               </div>
             </div>
 
             <div className="flex gap-6 items-start">
-              <div className="text-4xl font-bold text-purple-400">2015</div>
+              <div className="text-4xl font-bold text-orange-400">2020s</div>
               <div>
-                <h4 className="text-xl font-semibold mb-2">DevOps & Cloud Transformation</h4>
+                <h4 className="text-xl font-semibold mb-2">Popularity of Web3</h4>
                 <p className="text-gray-300">
-                  Agile and DevOps practices became standard. Cloud platforms like AWS, Azure, and GCP transformed
-                  infrastructure management. Microservices architecture gained popularity.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start">
-              <div className="text-4xl font-bold text-green-400">2020</div>
-              <div>
-                <h4 className="text-xl font-semibold mb-2">Remote Work & AI Integration</h4>
-                <p className="text-gray-300">
-                  The pandemic accelerated remote work adoption. AI and machine learning became accessible to mainstream
-                  developers. Low-code platforms emerged as serious development options.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6 items-start">
-              <div className="text-4xl font-bold text-orange-400">2025</div>
-              <div>
-                <h4 className="text-xl font-semibold mb-2">AI-Augmented Development</h4>
-                <p className="text-gray-300">
-                  AI-assisted coding becomes standard practice. Quantum computing begins to influence software
-                  architecture. Cross-platform development and immersive technologies (AR/VR) become mainstream
-                  requirements.
+                  As blockchain becomes popular, there are new technologies that allow for its integreation into websites for payment and record-keeping known as Web3 tech. Co-Founder of Ethereum, Gavin Wood, coined the the Web3.
                 </p>
               </div>
             </div>
