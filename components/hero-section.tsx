@@ -23,7 +23,7 @@ export default function HeroSection() {
         >
           <h1 className="text-lg md:text-3xl lg:text-7xl font-extrabold mb-6">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-              {career === 'swe' ? "Computer Programmer" : "Cyber Operator"}
+              {career === 'swe' ? "Web Developer" : "Cyber Operator"}
             </span>
           </h1>
           <div className="mb-12 justify-center font-medium">
@@ -31,7 +31,7 @@ export default function HeroSection() {
           </div>
           <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
             {career === 'swe' 
-              ? "Explore the fast pacing environment of software engineering — where creativity meets technology to forge a new future" 
+              ? "Explore the fast pacing environment of web development — where creativity meets technology to forge a new future" 
               : "Protecting assets isn't enough. We must also protect digital ones - where a cyber operator comes into play!"
             }
           </p>
